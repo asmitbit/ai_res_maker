@@ -88,8 +88,7 @@ ai-resume-maker/
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
-git clone https://github.com/your-username/ai-resume-maker.git
-cd ai-resume-maker
+
 
 2️⃣ Install dependencies
 npm install
