@@ -42,7 +42,7 @@ An AI-powered Resume Builder built with Next.js, React, Clerk Authentication, Mo
 
 🛠️ Tech Stack
 
-Frontend:
+Frontend
 
 Next.js
 
@@ -52,19 +52,19 @@ TailwindCSS
 
 Shadcn UI
 
-Backend & APIs:
+Backend & APIs
 
 Next.js API Routes
 
-Clerk for Authentication
+Clerk Authentication
 
-Google Gemini AI for content generation
+Google Gemini AI
 
-Database:
+Database
 
-MongoDB (via Mongoose ODM)
+MongoDB (via Mongoose)
 
-Deployment:
+Deployment
 
 Vercel
 
@@ -94,9 +94,9 @@ cd ai-resume-maker
 2️⃣ Install dependencies
 npm install
 
-3️⃣ Setup Environment Variables
+3️⃣ Setup environment variables
 
-Create a .env.local file in the root directory and add:
+Create a .env.local file in the root directory:
 
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
@@ -121,12 +121,17 @@ npm start
 
 🔑 Authentication (Clerk)
 
-Authentication is handled by Clerk. The middleware.js file ensures that protected routes like /dashboard and /api/resume are only accessible by authenticated users. Clerk automatically manages JWTs, sessions, and tokens, so developers don’t need to implement custom token handling.
+Authentication is managed using Clerk.
+
+The middleware.js ensures protected routes (/dashboard, /api/resume) are only accessible to logged-in users.
+
+Clerk automatically handles JWTs, sessions, and tokens, so manual token management is not required.
 
 🗄️ Database (MongoDB + Mongoose)
 
-MongoDB is used as the database, with Mongoose handling schemas and queries.
-Example db.js:
+MongoDB is used as the main database. Mongoose provides schema validation and easy querying.
+
+Example connection (db.js):
 
 import mongoose from "mongoose";
 
@@ -143,29 +148,38 @@ export default async function db() {
 
 🤖 AI Integration (Google Gemini)
 
-The app integrates Google Gemini AI to generate personalized resume content. When a user inputs their skills or role, Gemini suggests better phrasing or tailored achievements, making resumes more impactful.
+Users enter skills, work experience, or roles.
 
+Gemini AI suggests bullet points, phrasing, and achievements to enhance resumes.
 
+This makes resumes ATS-friendly and professional.
 
+📸 Screenshots
+
+(Add screenshots: login page, dashboard, AI suggestions, final resume PDF preview)
+
+🚀 Deployment
+
+Deployed on Vercel.
+
+Configure environment variables in the Vercel dashboard.
+
+Push to GitHub → Vercel auto-builds & deploys.
 
 📌 Future Enhancements
 
 🌍 Multi-language support
 
-📊 Resume analytics (ATS score checking)
+📊 Resume analytics (ATS score checker)
 
 🎨 More resume templates
 
-📤 One-click LinkedIn profile import
+📤 LinkedIn profile import
 
 👨‍💻 Author
 
 Asmit Adesh
 
-🎓 4th Year Undergraduate at BIT Mesra, Ranchi
+🎓 3rd Year Undergraduate at BIT Mesra, Ranchi
 
 💡 Passionate about AI, ML, and Full-Stack Development
-
-
-
-
